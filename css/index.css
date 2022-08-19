@@ -63,6 +63,9 @@ nav .signin-btn {
 
 }
 
+nav .nav-menu-icon {
+  display: none;
+}
 
 /* left part  */
 .intro-section .left-section {
@@ -111,4 +114,41 @@ nav .signin-btn {
   position: absolute;
   top: 78%;
   right: 56%;
+}
+
+@media (max-width:976px) {
+  .hidden {
+    visibility: hidden;
+    display: none;
+  }
+
+  nav .nav-menu-icon {
+    display: block;
+    margin: auto;
+    font-size: xx-large;
+  }
+
+  nav img {
+    /* width: 150px; */
+    padding-left: 20px;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-section {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+  }
+
+  .left-section button {
+    text-align: center;
+  }
+
+  .imgs-div img:nth-child(2) {
+    margin-top: 95%;
+  }
 }
